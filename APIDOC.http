@@ -1,0 +1,41 @@
+#api call for list records
+###
+GET http://127.0.0.1:8000/students/
+Accept: application/json
+
+#api call for insert record
+###
+POST http://127.0.0.1:8000/students/
+Content-Type: application/json
+
+{
+  "name":"pushpan",
+  "email":"pushpan2@gmail.com",
+  "course":"javascript",
+  "pass_out_year":2025,
+  "college":"luminar"
+}
+
+#api call for  get record
+###
+GET  http://127.0.0.1:8000/students/2/
+Accept:  application/json
+
+#api call for  updating
+###
+PUT http://127.0.0.1:8000/students/2/
+Content-Type: application/json
+
+  {
+    "id": 2,
+    "name": "muthuvel pandian",
+    "email": "jailer2@gmail.com",
+    "course": "data science",
+    "pass_out_year": 2026,
+    "college": "luminar"
+  }
+
+#api call for delete record
+###
+DELETE  http://127.0.0.1:8000/students/3/
+Accept:  application/json
